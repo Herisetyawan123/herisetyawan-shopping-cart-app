@@ -1,0 +1,36 @@
+//START PROGRAM
+FUNCTION login()
+    PRINT "BERADA DI HALAMAN LOGIN"
+    WHILE TRUE:
+        username       = INPUT "Masukan username"
+        password       = INPUT "Masukan password"
+        data           = DATA.get("username", username)
+        IF password == data["password"]
+            BREAK
+    END WHILE
+END FUNCTION
+
+FUNCTION dashboard()
+    PRINT "berada di halaman dashboard"
+    produk      = 0
+    item        = 0
+    WHILE True:
+        IF clickKeranjang():
+            produk  += 1
+        IF suntingKeranjang():
+            BREAK
+    END WHILE
+END FUNCTION
+
+FUNCTION checkout()
+    PRINT "halaman pembayaran"
+    IF clickTamahProduk():
+        dashboard()
+    WHILE TRUE:
+        IF tambahItem():
+            item += 1
+
+        IF clickBayar():
+            BREAK
+    END WHILE
+END FUNCTION
