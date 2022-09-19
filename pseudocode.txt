@@ -1,0 +1,14 @@
+//START PROGRAM
+FUNCTION login()
+    PRINT "BERADA DI HALAMAN LOGIN"
+    WHILE TRUE:
+        username       = INPUT "Masukan username"
+        password       = INPUT "Masukan password"
+        data           = DATA.get("username", username)
+        IF password == data["password"]
+            BREAK
+    END WHILE
+END FUNCTION
+
+
+
