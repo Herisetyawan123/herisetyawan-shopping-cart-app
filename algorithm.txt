@@ -1,0 +1,13 @@
+1. login
+2. menginputkan username dan password
+3. jika username dan password cocok maka lanjut step berikutnya
+4. masuk halaman dashboard
+5. memilih produk
+6. memencet tombol keranjang
+7. jika ingin membeli barang lainnya maka akan ke dashboard lagi untuk mencari produk
+8. jika tidak maka masuk halaman checkout 
+9. disini bisa sunting pesanan menambah item per produk atau menambah produk lainnya
+10. jika sudah selesai dan yakin maka penggunaka akan memencet tombol checkout
+11. maka sistem akan memunculkan data total pembayaran yang harus di bayar
+12. pengguna tinggal membayar barang yang akan dibeli 
+13. pembayaran berhasil
