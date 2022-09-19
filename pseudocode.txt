@@ -12,3 +12,23 @@ END FUNCTION
 
 
 
+FUNCTION dashboard()
+    PRINT "berada di halaman dashboard"
+    produk      = 0
+    item        = 0
+    WHILE True:
+        IF clickKeranjang():
+            produk  += 1
+            item    += 1
+        ELSE:
+            BREAK
+    END WHILE
+END FUNCTION
+
+FUNCTION checkout()
+
+END FUNCTION
+
+    
+
+END FUNCTION
