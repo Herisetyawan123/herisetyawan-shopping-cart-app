@@ -10,8 +10,6 @@ FUNCTION login()
     END WHILE
 END FUNCTION
 
-
-
 FUNCTION dashboard()
     PRINT "berada di halaman dashboard"
     produk      = 0
@@ -19,16 +17,20 @@ FUNCTION dashboard()
     WHILE True:
         IF clickKeranjang():
             produk  += 1
-            item    += 1
-        ELSE:
+        IF suntingKeranjang():
             BREAK
     END WHILE
 END FUNCTION
 
 FUNCTION checkout()
+    PRINT "halaman pembayaran"
+    IF clickTamahProduk():
+        dashboard()
+    WHILE TRUE:
+        IF tambahItem():
+            item += 1
 
-END FUNCTION
-
-    
-
+        IF clickBayar():
+            BREAK
+    END WHILE
 END FUNCTION
